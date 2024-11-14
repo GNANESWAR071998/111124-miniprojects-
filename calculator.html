@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./calculator.css">
+</head>
+<body>
+    <div class="container">
+
+
+        <div class="Calcontainer">
+
+        <div id="result">0</div>
+
+
+            <div class="part-1">
+                <button onclick="validation('7')">7</button>
+                <button onclick="validation('8')">8</button>
+                <button onclick="validation('9')">9</button>
+                <button onclick="validation('/')" id="yellow">/</button>
+            </div>
+
+            <div class="part-2">
+                <button onclick="validation('4')">4</button>
+                <button onclick="validation('5')">5</button>
+                <button onclick="validation('6')">6</button>
+                <button onclick="validation('*')" id="yellow">*</button>
+            
+            </div>
+
+            <div class="part-3">
+                <button onclick="validation('1')">1</button>
+                <button onclick="validation('2')">2</button>
+                <button onclick="validation('3')">3</button>
+                <button onclick="validation('-')" id="yellow">-</button>
+            </div>
+
+           <div class="part-4">
+                <button onclick="validation('0')">0</button>
+                <button onclick="validation('.')" id="purple">.</button>
+                <button onclick="total('=')" id="green">=</button>
+                <button onclick="validation('+')" id="yellow">+</button>
+           </div>
+
+            <button onclick="ClearResult()" style="background-color: lightsalmon;">C</button>
+
+        </div>
+
+    </div>
+
+    <script src="calculator.js"></script>
+</body>
+</html>
